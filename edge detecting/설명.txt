@@ -1,0 +1,12 @@
+HED로 사진뽑고 각 2장씩 적당한 커널 2개 * n개
+그리고 canny 도 뽑고 laplacian도 뽑고
+
+거기서hed랑 다른거 합쳐서 (canny and hed)
+
+uint8 (0, 255)값 두개 나올거고
+안되면 float이나 bool로 바꿔서 np and 연산 하고
+
+
+and연산한 결과를 다시 uint8로 바꾼다음
+np형식이나 사진 형식으로 출력해서
+테두리 따는걸 위주로
